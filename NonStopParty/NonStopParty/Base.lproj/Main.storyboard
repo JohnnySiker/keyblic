@@ -142,7 +142,7 @@
                                     <action selector="signInButton:" destination="2kQ-6e-h1k" eventType="touchUpInside" id="WG9-NU-YcN"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hs0-B4-bWE">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hs0-B4-bWE" customClass="FBSDKLoginButton">
                                 <rect key="frame" x="267" y="421" width="67" height="30"/>
                                 <state key="normal" title="Facebook"/>
                             </button>
@@ -171,6 +171,9 @@
                             <constraint firstItem="RUS-Qf-A7u" firstAttribute="top" secondItem="oz6-aa-vFD" secondAttribute="bottom" constant="30" id="uis-Kz-vWg"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="btnLogin" destination="Hs0-B4-bWE" id="Fdj-KZ-di5"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SvU-uc-A6S" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
