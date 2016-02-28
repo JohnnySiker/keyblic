@@ -594,6 +594,13 @@
                                     <rect key="frame" x="44" y="318" width="313" height="47"/>
                                 </variation>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rfc-vR-uVo">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="44" y="380" width="46" height="30"/>
+                                </variation>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RqK-Uq-gmj">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <state key="normal" title="Button"/>
@@ -608,23 +615,33 @@
                                     <rect key="frame" x="311" y="380" width="46" height="30"/>
                                 </variation>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rfc-vR-uVo">
-                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <state key="normal" title="Button"/>
-                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="44" y="380" width="46" height="30"/>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="CCH-K8-dZA">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="heightClass=regular-widthClass=compact" ambiguous="YES" misplaced="YES">
+                                    <rect key="frame" x="0.0" y="486" width="400" height="314"/>
                                 </variation>
-                            </button>
+                            </mapView>
                         </subviews>
                         <color key="backgroundColor" red="0.13333333333333333" green="0.74117647058823533" blue="0.30196078431372547" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="acY-sb-lZV" firstAttribute="top" secondItem="CCH-K8-dZA" secondAttribute="bottom" id="5g1-8r-nvI"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="CCH-K8-dZA" secondAttribute="trailing" constant="-20" id="JAM-gD-94T"/>
+                            <constraint firstItem="CCH-K8-dZA" firstAttribute="leading" secondItem="gAj-8F-Oht" secondAttribute="leadingMargin" constant="-20" id="O4F-fr-Llr"/>
+                        </constraints>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="5nt-Rk-LUp"/>
                                 <exclude reference="afa-tY-XSV"/>
                                 <exclude reference="3ws-3h-Lcc"/>
+                                <exclude reference="Rfc-vR-uVo"/>
                                 <exclude reference="RqK-Uq-gmj"/>
                                 <exclude reference="DIF-Yf-u3v"/>
-                                <exclude reference="Rfc-vR-uVo"/>
+                                <exclude reference="CCH-K8-dZA"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="JAM-gD-94T"/>
+                                <exclude reference="O4F-fr-Llr"/>
+                                <exclude reference="5g1-8r-nvI"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
@@ -632,9 +649,15 @@
                                 <include reference="5nt-Rk-LUp"/>
                                 <include reference="afa-tY-XSV"/>
                                 <include reference="3ws-3h-Lcc"/>
+                                <include reference="Rfc-vR-uVo"/>
                                 <include reference="RqK-Uq-gmj"/>
                                 <include reference="DIF-Yf-u3v"/>
-                                <include reference="Rfc-vR-uVo"/>
+                                <include reference="CCH-K8-dZA"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="JAM-gD-94T"/>
+                                <include reference="O4F-fr-Llr"/>
+                                <include reference="5g1-8r-nvI"/>
                             </mask>
                         </variation>
                     </view>
