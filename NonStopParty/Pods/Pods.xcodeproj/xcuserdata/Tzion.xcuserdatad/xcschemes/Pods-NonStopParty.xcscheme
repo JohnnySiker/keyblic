@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '05DC4B7201ADBF5EBE214BFD'
+               BlueprintIdentifier = 'D44D7B21EC31E55434FB5A7F'
                BlueprintName = 'Pods-NonStopParty'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'Pods_NonStopParty.framework'>

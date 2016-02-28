@@ -31,6 +31,7 @@
 		C76E8D781C8280F600381524 /* LogInController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogInController.swift; sourceTree = "<group>"; };
 		C76E8D7A1C82810600381524 /* SignInController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInController.swift; sourceTree = "<group>"; };
 		C76E8D7C1C82811600381524 /* MainMenuController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainMenuController.swift; sourceTree = "<group>"; };
+		C77EF3761C82CC170031F77F /* Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
 		E96FA9573603411BD1AD0DEA /* Pods-NonStopParty.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NonStopParty.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NonStopParty/Pods-NonStopParty.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -85,6 +86,7 @@
 			isa = PBXGroup;
 			children = (
 				9FD50D2A1C82613100745859 /* AppDelegate.swift */,
+				C77EF3761C82CC170031F77F /* Bridging-Header.h */,
 				9FD50D2E1C82613100745859 /* Main.storyboard */,
 				9FD50D2C1C82613100745859 /* WelcomeController.swift */,
 				C76E8D781C8280F600381524 /* LogInController.swift */,
@@ -339,6 +341,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Keyblic.NonStopParty;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "NonStopParty/Bridging-Header.h";
 			};
 			name = Debug;
 		};
@@ -351,6 +354,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Keyblic.NonStopParty;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "NonStopParty/Bridging-Header.h";
 			};
 			name = Release;
 		};
