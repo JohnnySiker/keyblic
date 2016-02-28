@@ -86,6 +86,7 @@ strip_invalid_archs() {
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "Pods-NonStopParty/Alamofire.framework"
   install_framework "Pods-NonStopParty/Bolts.framework"
+  install_framework "Pods-NonStopParty/BubbleTransition.framework"
   install_framework "Pods-NonStopParty/FBSDKCoreKit.framework"
   install_framework "Pods-NonStopParty/FBSDKLoginKit.framework"
   install_framework "Pods-NonStopParty/FBSDKShareKit.framework"
@@ -94,6 +95,7 @@ fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "Pods-NonStopParty/Alamofire.framework"
   install_framework "Pods-NonStopParty/Bolts.framework"
+  install_framework "Pods-NonStopParty/BubbleTransition.framework"
   install_framework "Pods-NonStopParty/FBSDKCoreKit.framework"
   install_framework "Pods-NonStopParty/FBSDKLoginKit.framework"
   install_framework "Pods-NonStopParty/FBSDKShareKit.framework"

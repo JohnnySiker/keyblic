@@ -9,6 +9,8 @@ target 'NonStopParty' do
 	pod 'FBSDKCoreKit'
 	pod 'FBSDKLoginKit'
 	pod 'FBSDKShareKit'
+	pod 'BubbleTransition', '~> 1.0.0'
+
 end
 
 

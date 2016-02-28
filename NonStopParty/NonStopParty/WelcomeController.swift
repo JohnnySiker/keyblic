@@ -10,15 +10,36 @@ import UIKit
 
 class WelcomeController: UIViewController {
 
+  
+    
+    
+    
+    @IBOutlet weak var wb_gifContainer: UIWebView!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        setup()
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    
+    func setup(){
+        let filePath = NSBundle.mainBundle().pathForResource("Paisaje", ofType: "gif")
+        let gif = NSData(contentsOfFile: filePath!)
+        wb_gifContainer.frame = self.view.frame
+        wb_gifContainer.loadData(gif!, MIMEType: "image/gif", textEncodingName: String(), baseURL: NSURL())
+        wb_gifContainer.contentMode = .Center
+        wb_gifContainer.userInteractionEnabled = false;
+    }
+    
+    
+    
 //Botón que cambia la vista de la vista de bienvenida a la vista de login 
     @IBAction func nextScreenButton(sender: AnyObject) {
         let logInScreen = self.storyboard?.instantiateViewControllerWithIdentifier("LogInController")
