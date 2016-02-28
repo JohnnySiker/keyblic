@@ -7,29 +7,28 @@
 //
 
 import UIKit
+import MapKit
 
 class NewEventViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let latitude = CLLocationCoordinate2D(latitude: 51.507222, longitude: -0.1275)
+        let span = MKCoordinateSpanMake(0.05, 0.05)
+        let region = MKCoordinateRegion(center: latitude, span: span)
+        map.setRegion(region, animated: true)
 
-        // Do any additional setup after loading the view.
+
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+
     }
     
 
-    /*
-    // MARK: - Navigation
+    @IBOutlet var map: MKMapView!
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
