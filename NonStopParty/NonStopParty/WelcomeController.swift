@@ -19,7 +19,7 @@ class WelcomeController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
+//Botón que cambia la vista de la vista de bienvenida a la vista de login 
     @IBAction func nextScreenButton(sender: AnyObject) {
         let logInScreen = self.storyboard?.instantiateViewControllerWithIdentifier("LogInController")
         self.presentViewController(logInScreen!, animated: true, completion: nil)

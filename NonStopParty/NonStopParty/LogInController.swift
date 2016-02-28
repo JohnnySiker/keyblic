@@ -13,30 +13,29 @@ class LogInController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
+    
+    //Botón que se encarga de hacer el inicio de sesión del usuario. Si el inicio es exitoso, se pasa a la pantalla de menu principal
+    
     @IBAction func loginButton(sender: AnyObject) {
+        
+        //Aquí va todo el proceso de inicio de sesión.
+        
         let mainMenuView = self.storyboard?.instantiateViewControllerWithIdentifier("MainMenuController")
         self.presentViewController(mainMenuView!, animated: true, completion: nil)
         
     }
+    
+    //Botón que se encarga de hacer la transición a la pantalla de Sign in, donde el usuario podrá hacer su registro en caso de no tener una cuenta registrada.
+    
     @IBAction func signInButton(sender: AnyObject) {
+        
         let signInVIew = self.storyboard?.instantiateViewControllerWithIdentifier("SignInController")
         self.presentViewController(signInVIew!, animated: true, completion: nil)
     }
