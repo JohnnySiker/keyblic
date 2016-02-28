@@ -2,19 +2,23 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>CFBundleURLTypes</key>
-	<array>
-    <dict>
-  	<key>CFBundleURLSchemes</key>
-  	<array>
+<key>CFBundleURLTypes</key>
+<array>
+  <dict>
+  <key>CFBundleURLSchemes</key>
+  <array>
     <string>fb1738700726367452</string>
-  	</array>
-  	</dict>
-	</array>
-	<key>FacebookAppID</key>
-	<string>1738700726367452</string>
-	<key>FacebookDisplayName</key>
-	<string>PartyNonStop</string>
+  </array>
+  </dict>
+</array>
+<key>FacebookAppID</key>
+<string>1738700726367452</string>
+<key>FacebookDisplayName</key>
+<string>PartyNonStop</string>
+<key>LSApplicationQueriesSchemes</key>
+<array>
+    <string>fbauth2</string>
+</array>
 
 	<key>NSAppTransportSecurity</key>
 <dict>
@@ -43,6 +47,7 @@
         </dict>
     </dict>
 </dict>
+
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>CFBundleExecutable</key>
