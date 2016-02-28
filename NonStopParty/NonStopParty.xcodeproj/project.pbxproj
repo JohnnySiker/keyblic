@@ -21,6 +21,7 @@
 		9FD50D321C82613100745859 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9FD50D311C82613100745859 /* Assets.xcassets */; };
 		9FD50D351C82613100745859 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FD50D331C82613100745859 /* LaunchScreen.storyboard */; };
 		C74D9D701C834F59000F44C4 /* NewEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C74D9D6F1C834F59000F44C4 /* NewEventViewController.swift */; };
+		C74D9D721C835616000F44C4 /* setLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C74D9D711C835616000F44C4 /* setLocationViewController.swift */; };
 		C76E8D791C8280F600381524 /* LogInController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C76E8D781C8280F600381524 /* LogInController.swift */; };
 		C76E8D7B1C82810600381524 /* SignInController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C76E8D7A1C82810600381524 /* SignInController.swift */; };
 		C76E8D7D1C82811600381524 /* MenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C76E8D7C1C82811600381524 /* MenuController.swift */; };
@@ -47,6 +48,7 @@
 		9FD50D341C82613100745859 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9FD50D361C82613100745859 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C74D9D6F1C834F59000F44C4 /* NewEventViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewEventViewController.swift; sourceTree = "<group>"; };
+		C74D9D711C835616000F44C4 /* setLocationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = setLocationViewController.swift; sourceTree = "<group>"; };
 		C76E8D781C8280F600381524 /* LogInController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogInController.swift; sourceTree = "<group>"; };
 		C76E8D7A1C82810600381524 /* SignInController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInController.swift; sourceTree = "<group>"; };
 		C76E8D7C1C82811600381524 /* MenuController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuController.swift; sourceTree = "<group>"; };
@@ -140,6 +142,7 @@
 				9FD50D2A1C82613100745859 /* AppDelegate.swift */,
 				C77EF3761C82CC170031F77F /* Bridging-Header.h */,
 				9FD50D2E1C82613100745859 /* Main.storyboard */,
+				C74D9D711C835616000F44C4 /* setLocationViewController.swift */,
 				9F6DDF6A1C8328C000B82526 /* EventTypeCell.swift */,
 				C74D9D6F1C834F59000F44C4 /* NewEventViewController.swift */,
 				9F6DDF691C83216E00B82526 /* Designables */,
@@ -279,6 +282,7 @@
 				9F6DDF5F1C82F37600B82526 /* NotesWelcomeController.swift in Sources */,
 				9F6DDF6B1C8328C000B82526 /* EventTypeCell.swift in Sources */,
 				9F6DDF6F1C83318800B82526 /* CircleButton.swift in Sources */,
+				C74D9D721C835616000F44C4 /* setLocationViewController.swift in Sources */,
 				9F6DDF6D1C832BE900B82526 /* EventType.swift in Sources */,
 				9FD50D2D1C82613100745859 /* WelcomeController.swift in Sources */,
 				C76E8D7B1C82810600381524 /* SignInController.swift in Sources */,

@@ -14,11 +14,6 @@ class NewEventViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let latitude = CLLocationCoordinate2D(latitude: 51.507222, longitude: -0.1275)
-        let span = MKCoordinateSpanMake(0.05, 0.05)
-        let region = MKCoordinateRegion(center: latitude, span: span)
-        map.setRegion(region, animated: true)
-
 
     }
 
@@ -27,8 +22,19 @@ class NewEventViewController: UIViewController {
 
     }
     
+    
 
-    @IBOutlet var map: MKMapView!
 
+    @IBAction func setLocationButton(sender: AnyObject) {
+        let setLocationView = self.storyboard?.instantiateViewControllerWithIdentifier("setLocationViewController")
+        self.presentViewController(setLocationView!, animated: true, completion: nil)
+        
+        
+    }
+    @IBAction func backButton(sender: AnyObject) {
+        let homeView = self.storyboard?.instantiateViewControllerWithIdentifier("HomeController")
+        self.presentViewController(homeView!, animated: true, completion: nil)
+        
+    }
 
 }
