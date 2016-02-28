@@ -20,6 +20,8 @@
 		9FD50D301C82613100745859 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FD50D2E1C82613100745859 /* Main.storyboard */; };
 		9FD50D321C82613100745859 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9FD50D311C82613100745859 /* Assets.xcassets */; };
 		9FD50D351C82613100745859 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FD50D331C82613100745859 /* LaunchScreen.storyboard */; };
+		9FF75A0C1C83442C002BF70A /* PromotionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF75A0B1C83442C002BF70A /* PromotionController.swift */; };
+		9FF75A0E1C834A97002BF70A /* PedidosController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF75A0D1C834A97002BF70A /* PedidosController.swift */; };
 		C76E8D791C8280F600381524 /* LogInController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C76E8D781C8280F600381524 /* LogInController.swift */; };
 		C76E8D7B1C82810600381524 /* SignInController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C76E8D7A1C82810600381524 /* SignInController.swift */; };
 		C76E8D7D1C82811600381524 /* MenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C76E8D7C1C82811600381524 /* MenuController.swift */; };
@@ -45,6 +47,8 @@
 		9FD50D311C82613100745859 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9FD50D341C82613100745859 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9FD50D361C82613100745859 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9FF75A0B1C83442C002BF70A /* PromotionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PromotionController.swift; sourceTree = "<group>"; };
+		9FF75A0D1C834A97002BF70A /* PedidosController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PedidosController.swift; sourceTree = "<group>"; };
 		C76E8D781C8280F600381524 /* LogInController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogInController.swift; sourceTree = "<group>"; };
 		C76E8D7A1C82810600381524 /* SignInController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInController.swift; sourceTree = "<group>"; };
 		C76E8D7C1C82811600381524 /* MenuController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuController.swift; sourceTree = "<group>"; };
@@ -93,6 +97,7 @@
 		9F6DDF641C831E6E00B82526 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				9FF75A0B1C83442C002BF70A /* PromotionController.swift */,
 				9F6DDF651C83204400B82526 /* HomeController.swift */,
 				9F6DDF6C1C832BE900B82526 /* EventType.swift */,
 				9F6DDF5E1C82F37600B82526 /* NotesWelcomeController.swift */,
@@ -138,6 +143,7 @@
 				9FD50D2A1C82613100745859 /* AppDelegate.swift */,
 				C77EF3761C82CC170031F77F /* Bridging-Header.h */,
 				9FD50D2E1C82613100745859 /* Main.storyboard */,
+				9FF75A0D1C834A97002BF70A /* PedidosController.swift */,
 				9F6DDF6A1C8328C000B82526 /* EventTypeCell.swift */,
 				9F6DDF691C83216E00B82526 /* Designables */,
 				9F6DDF641C831E6E00B82526 /* Controllers */,
@@ -280,9 +286,11 @@
 				9FD50D2D1C82613100745859 /* WelcomeController.swift in Sources */,
 				C76E8D7B1C82810600381524 /* SignInController.swift in Sources */,
 				9F6DDF661C83204400B82526 /* HomeController.swift in Sources */,
+				9FF75A0E1C834A97002BF70A /* PedidosController.swift in Sources */,
 				C76E8D791C8280F600381524 /* LogInController.swift in Sources */,
 				9FD50D2B1C82613100745859 /* AppDelegate.swift in Sources */,
 				C76E8D7D1C82811600381524 /* MenuController.swift in Sources */,
+				9FF75A0C1C83442C002BF70A /* PromotionController.swift in Sources */,
 				9F6DDF681C83216B00B82526 /* CircularImage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

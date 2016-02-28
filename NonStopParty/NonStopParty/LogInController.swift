@@ -33,8 +33,7 @@ class LogInController: UIViewController, FBSDKLoginButtonDelegate{
         
         //Aquí va todo el proceso de inicio de sesión.
         
-        let mainMenuView = self.storyboard?.instantiateViewControllerWithIdentifier("MainMenuController")
-        self.presentViewController(mainMenuView!, animated: true, completion: nil)
+        self.dismissViewControllerAnimated(true, completion: nil)
         
     }
     
@@ -43,7 +42,7 @@ class LogInController: UIViewController, FBSDKLoginButtonDelegate{
     @IBAction func signInButton(sender: AnyObject) {
         
         let signInVIew = self.storyboard?.instantiateViewControllerWithIdentifier("SignInController")
-        self.presentViewController(signInVIew!, animated: true, completion: nil)
+        self.navigationController?.presentViewController(signInVIew!, animated: true, completion: nil)
     }
     
     func configureLogin ()
@@ -73,5 +72,6 @@ class LogInController: UIViewController, FBSDKLoginButtonDelegate{
     func loginButtonDidLogOut(loginButton: FBSDKLoginButton!) {
         print("User Logged Out")
     }
+    
 
 }

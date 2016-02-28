@@ -24,10 +24,11 @@ class HomeController: UIViewController,SWRevealViewControllerDelegate {
         tb_events.dataSource = self
         
         eventos = [EventType(imageName: "Birthday", title: "Birthday"),EventType(imageName: "Grill", title: "Grill"),EventType(imageName: "Party", title: "Party"),EventType(imageName: "Wedding", title: "Wedding")]
+        self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
     }
 
     override func viewDidAppear(animated: Bool) {
-        self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
+        
     }
     
     

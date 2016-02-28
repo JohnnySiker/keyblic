@@ -21,6 +21,7 @@ class WelcomeController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         setup()
+        self.navigationController?.navigationBar.hidden = true
     }
 
     override func didReceiveMemoryWarning() {
@@ -43,9 +44,13 @@ class WelcomeController: UIViewController {
 //Botón que cambia la vista de la vista de bienvenida a la vista de login 
     @IBAction func nextScreenButton(sender: AnyObject) {
         let logInScreen = self.storyboard?.instantiateViewControllerWithIdentifier("LogInController")
-        self.presentViewController(logInScreen!, animated: true, completion: nil)
+        self.navigationController?.pushViewController(logInScreen!, animated: true)
         
     }
 
+    @IBAction func signup(sender: UIButton) {
+        let signupScreen = self.storyboard?.instantiateViewControllerWithIdentifier("SignInController")
+        self.navigationController?.pushViewController(signupScreen!, animated: true)
+    }
 }
 
