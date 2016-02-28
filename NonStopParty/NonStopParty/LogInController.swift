@@ -31,5 +31,14 @@ class LogInController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    @IBAction func loginButton(sender: AnyObject) {
+        let mainMenuView = self.storyboard?.instantiateViewControllerWithIdentifier("MainMenuController")
+        self.presentViewController(mainMenuView!, animated: true, completion: nil)
+        
+    }
+    @IBAction func signInButton(sender: AnyObject) {
+        let signInVIew = self.storyboard?.instantiateViewControllerWithIdentifier("SignInController")
+        self.presentViewController(signInVIew!, animated: true, completion: nil)
+    }
 
 }

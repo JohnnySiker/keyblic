@@ -31,5 +31,17 @@ class SignInController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    
+    
+    //Boton que se encarga de manejar el registro de los datos del usuario en la base de datos, aparte de la transición de pantallas.
+    @IBAction func singInButton(sender: AnyObject) {
+        //Aquí viene todo el proceso de resgistro de usuario en la base de datos 
+        
+        let mainMenuView = self.storyboard?.instantiateViewControllerWithIdentifier("MainMenuController")
+        
+        self.presentViewController(mainMenuView!, animated: true , completion: nil)
+        
+    }
+
 
 }
