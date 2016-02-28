@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9F6DDF5D1C82EF2100B82526 /* Paisaje.gif in Resources */ = {isa = PBXBuildFile; fileRef = 9F6DDF5C1C82EF2100B82526 /* Paisaje.gif */; };
+		9F6DDF5F1C82F37600B82526 /* NotesWelcomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F6DDF5E1C82F37600B82526 /* NotesWelcomeController.swift */; };
 		9FD50D2B1C82613100745859 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FD50D2A1C82613100745859 /* AppDelegate.swift */; };
 		9FD50D2D1C82613100745859 /* WelcomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FD50D2C1C82613100745859 /* WelcomeController.swift */; };
 		9FD50D301C82613100745859 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FD50D2E1C82613100745859 /* Main.storyboard */; };
@@ -21,6 +23,8 @@
 /* Begin PBXFileReference section */
 		0F5C26715D5BF3FA7D3A010F /* Pods-NonStopParty.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NonStopParty.release.xcconfig"; path = "Pods/Target Support Files/Pods-NonStopParty/Pods-NonStopParty.release.xcconfig"; sourceTree = "<group>"; };
 		4F1435C01B17A1B5C1EB3697 /* Pods_NonStopParty.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NonStopParty.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F6DDF5C1C82EF2100B82526 /* Paisaje.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Paisaje.gif; sourceTree = "<group>"; };
+		9F6DDF5E1C82F37600B82526 /* NotesWelcomeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotesWelcomeController.swift; sourceTree = "<group>"; };
 		9FD50D271C82613100745859 /* NonStopParty.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NonStopParty.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FD50D2A1C82613100745859 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9FD50D2C1C82613100745859 /* WelcomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeController.swift; sourceTree = "<group>"; };
@@ -88,11 +92,13 @@
 				9FD50D2A1C82613100745859 /* AppDelegate.swift */,
 				C77EF3761C82CC170031F77F /* Bridging-Header.h */,
 				9FD50D2E1C82613100745859 /* Main.storyboard */,
+				9F6DDF5E1C82F37600B82526 /* NotesWelcomeController.swift */,
 				9FD50D2C1C82613100745859 /* WelcomeController.swift */,
 				C76E8D781C8280F600381524 /* LogInController.swift */,
 				C76E8D7A1C82810600381524 /* SignInController.swift */,
 				C76E8D7C1C82811600381524 /* MainMenuController.swift */,
 				9FD50D311C82613100745859 /* Assets.xcassets */,
+				9F6DDF5C1C82EF2100B82526 /* Paisaje.gif */,
 				9FD50D331C82613100745859 /* LaunchScreen.storyboard */,
 				9FD50D361C82613100745859 /* Info.plist */,
 			);
@@ -162,6 +168,7 @@
 			files = (
 				9FD50D351C82613100745859 /* LaunchScreen.storyboard in Resources */,
 				9FD50D321C82613100745859 /* Assets.xcassets in Resources */,
+				9F6DDF5D1C82EF2100B82526 /* Paisaje.gif in Resources */,
 				9FD50D301C82613100745859 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -221,6 +228,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F6DDF5F1C82F37600B82526 /* NotesWelcomeController.swift in Sources */,
 				9FD50D2D1C82613100745859 /* WelcomeController.swift in Sources */,
 				C76E8D7B1C82810600381524 /* SignInController.swift in Sources */,
 				C76E8D791C8280F600381524 /* LogInController.swift in Sources */,
